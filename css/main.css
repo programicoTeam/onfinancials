@@ -1,0 +1,40 @@
+section , footer {
+    padding: 60px 0px;
+}
+
+#mainHeader {
+    background: url('../img/business-finance-man-calculating-budget-numbers-invoices-financial-adviser-working_1423-119.jpg') no-repeat center red;
+    background-size: cover;
+    min-height: 600px;
+}
+
+#features i {
+    margin-bottom: 20px;
+}
+
+#about .col-md-6 {
+    padding: 0px;
+}
+
+#about div.desc {
+    background: greenyellow;
+    height: 300px;
+}
+
+#about div.video iframe {
+    height: 300px;
+    width: 100%;
+}
+
+footer {
+    background: #222;
+    color: #fefefe;
+    padding-bottom: 20px;
+}
+
+footer #copyRight {
+    border-top: 1px solid #ccc;
+    width: 60%;
+    margin: auto;
+    padding-top: 10px;
+}
