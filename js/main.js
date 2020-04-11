@@ -29,10 +29,16 @@ function addItemToYearPanel(itemText,itemId){
     newItem.setAttribute("class", itemId + numberOfClick);
 
 
+    document.getElementsByClassName("yearPanel")[0].appendChild(newItem);
+
+    
+
+
     // append the newItem to all divS with yearPanel class
-    for (i = 0; i < howManyYears; i++) {
+    for (i = 1; i < howManyYears; i++) {
         alert(i);
-        document.getElementsByClassName("yearPanel")[i].appendChild(newItem);
+        var cln = newItem.cloneNode(true);
+        document.getElementsByClassName("yearPanel")[i].appendChild(cln);
       }
     
     
