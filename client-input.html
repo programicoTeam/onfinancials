@@ -14,7 +14,7 @@
 <!-- meta character set -->
 <meta charset="UTF-8">
 <!-- Site Title -->
-<title>Islam onFin | Clinet Input</title>
+<title>onFin | Clinet Input</title>
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 <!--
 			CSS
@@ -92,7 +92,7 @@
                                         <option>Units</option>
                                       </select>
                                     
-                                    <select class="form-control">
+                                    <select onchange="getValue()" id="begYear" class="form-control">
                                         <option>Please Select year</option>
                                         <option>2014</option>
                                         <option>2015</option>
@@ -130,20 +130,15 @@
                           <div class="incomeStatement">
 
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                        <li class="nav-item">
-                                          <a class="nav-link active" id="year2014-tab" data-toggle="tab" href="#year2014" role="tab" aria-controls="year2014" aria-selected="true">2014</a>
-                                        </li>
-                                        <li class="nav-item">
-                                          <a class="nav-link" id="year2015-tab" data-toggle="tab" href="#year2015" role="tab" aria-controls="profile" aria-selected="false">2015</a>
-                                        </li>
-                                        <li class="nav-item">
-                                          <a class="nav-link" id="year2016-tab" data-toggle="tab" href="#year2016" role="tab" aria-controls="contact" aria-selected="false">2016</a>
-                                        </li>
+                                       
                                       </ul>
                                       <div class="tab-content" id="myTabContent">
                                         <div class="yearPanel tab-pane fade show active" id="year2014" role="tabpanel" aria-labelledby="hey-tab"></div>
                                         <div class="yearPanel tab-pane fade" id="year2015" role="tabpanel" aria-labelledby="profile-tab"></div>
                                         <div class="yearPanel tab-pane fade" id="year2016" role="tabpanel" aria-labelledby="contact-tab"></div>
+                                        <div class="yearPanel tab-pane fade" id="year2017" role="tabpanel" aria-labelledby="profile-tab"></div>
+                                        <div class="yearPanel tab-pane fade" id="year2018" role="tabpanel" aria-labelledby="contact-tab"></div>
+                                        <div class="yearPanel tab-pane fade" id="year2019" role="tabpanel" aria-labelledby="profile-tab"></div>
                                       </div>
 
                           </div>
