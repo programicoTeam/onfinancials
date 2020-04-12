@@ -58,14 +58,23 @@ document.getElementById("list").addEventListener("click", function(e) {
 function addItemToYearPanels(itemId,spotBegYear){
 
 
-    var newInputfield = document.createElement('input');
+    
     
 
 
-    for(spotBegYear+1; spotBegYear < currentYear;spotBegYear++){
+    for(spotBegYear; spotBegYear < currentYear;spotBegYear++){
  
-        var cln = newInputfield.cloneNode(true);
-        document.getElementById('year' + spotBegYear).appendChild(cln);
+        // var cln = newInputfield.cloneNode(true);
+        // document.getElementById('year' + spotBegYear).appendChild(cln);
+
+        var newInputfield = document.createElement('input');
+        newInputfield.setAttribute('id',itemId + spotBegYear);
+        document.getElementById('year' + spotBegYear).appendChild(newInputfield);
+
+
+
+        // newPanel.setAttribute('class','fade');
+        
 
     }
     
@@ -129,11 +138,12 @@ function createNewPAnel(tabYear){
         var newPanel = document.createElement('div');
         newPanel.setAttribute('class','yearPanel');
         newPanel.setAttribute('class','tab-pane');
-        newPanel.setAttribute('class','fade');
-        newPanel.setAttribute('role','tabpanel');
-        newPanel.setAttribute('aria-labelledby','contact-tab');
+        // newPanel.setAttribute('class','fade');
+        newPanel.setAttribute('role','tabpanel' + tabYear);
+        newPanel.setAttribute('aria-labelledby','contact-tab' + tabYear);
         newPanel.setAttribute('id','year' + tabYear);
 
+       
 
         var myTabContent = document.getElementById('myTabContent');
 
