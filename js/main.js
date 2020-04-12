@@ -1,11 +1,11 @@
 var clickedElementText;
 var clickedElementId;
 var numberOfClick = 0;
-var selectedYears = document.getElementsByClassName("yearPanel");
 var howManyYears;
 var yearSelected;
 var currentDate = new Date();
 var currentYear = currentDate.getFullYear();
+
 
 
 
@@ -22,7 +22,11 @@ window.onload = function(){
 };
 
 function getValue(){
+
     yearSelected = document.getElementById('begYear').value;
+
+    
+    
     
     howManyYears =  (currentYear - yearSelected) - 1;
 
@@ -46,26 +50,24 @@ document.getElementById("list").addEventListener("click", function(e) {
     numberOfClick++;
 
     // add item to yearPanel
-    addItemToYearPanels(clickedElementText,clickedElementId);
+    addItemToYearPanels(clickedElementId,yearSelected);
 
 })
 
 
-function addItemToYearPanels(itemText,itemId){
+function addItemToYearPanels(itemId,spotBegYear){
+
+
+    var newInputfield = document.createElement('input');
     
-    // create new item text field
-    var newItem = document.createElement("INPUT");
-    newItem.setAttribute("type", "text");
-    newItem.setAttribute("class", itemId + numberOfClick);
 
-    document.getElementsByClassName("yearPanel")[0].appendChild(newItem);
 
-    // append the newItem to all divS with yearPanel class
-    for (i = 1; i < howManyYears; i++) {
-        alert(i);
-        var cln = newItem.cloneNode(true);
-        document.getElementsByClassName("yearPanel")[i].appendChild(cln);
-      }
+    for(spotBegYear+1; spotBegYear < currentYear;spotBegYear++){
+ 
+        var cln = newInputfield.cloneNode(true);
+        document.getElementById('year' + spotBegYear).appendChild(cln);
+
+    }
     
     
 }
@@ -74,34 +76,16 @@ function addItemToYearPanels(itemText,itemId){
 function createTabsNPanels(year){
 
 
-while (yearSelected < currentYear){
+while (year < currentYear){
    
    
-    createNewTab(yearSelected);
+    createNewTab(year);
+
+    createNewPAnel(year);
    
-    createNewPAnel();
-   
-    yearSelected++;
+    year++;
    
 }
-
-   // create panel for the tab
-
-
-//    var newPanel = document.createElement('div');
-//    newPanel.setAttribute('class','yearPanel');
-//    newPanel.setAttribute('class','tab-pane');
-//    newPanel.setAttribute('class','fade');
-//    newPanel.setAttribute('role','tabpanel');
-//    newPanel.setAttribute('aria-labelledby','contact-tab');
-//    newPanel.setAttribute('id','year2020');
-
-
-//    var myTabContent = document.getElementById('myTabContent');
-
-//    myTabContent.appendChild(newPanel);
-
-
 
 }
 
@@ -134,6 +118,29 @@ function createNewTab(tabYear){
 }
 
 
-function createNewPAnel(){
+function createNewPAnel(tabYear){
     
+
+    // create panel for the tab
+
+
+    
+
+        var newPanel = document.createElement('div');
+        newPanel.setAttribute('class','yearPanel');
+        newPanel.setAttribute('class','tab-pane');
+        newPanel.setAttribute('class','fade');
+        newPanel.setAttribute('role','tabpanel');
+        newPanel.setAttribute('aria-labelledby','contact-tab');
+        newPanel.setAttribute('id','year' + tabYear);
+
+
+        var myTabContent = document.getElementById('myTabContent');
+
+        myTabContent.appendChild(newPanel);
+
+   
+
+       
+
 }
