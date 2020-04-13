@@ -14,21 +14,16 @@ window.onload = function(){
 
    // page fully loaded
 
-
-   
-
-
-
 };
 
 function getValue(){
+       
+    yearSelected = document.getElementById('begYear').value; // = 2014
 
-    yearSelected = document.getElementById('begYear').value;
-
     
     
     
-    howManyYears =  (currentYear - yearSelected) - 1;
+    howManyYears =  (currentYear - yearSelected) - 1;  //  ( 2020 - 2014 ) -1 = 6
 
     // create new tabs and panels that are equal to the value on howManyYears variable
 
@@ -50,12 +45,12 @@ document.getElementById("list").addEventListener("click", function(e) {
     numberOfClick++;
 
     // add item to yearPanel
-    addItemToYearPanels(clickedElementId,yearSelected);
+    addItemToYearPanels(clickedElementId,yearSelected,clickedElementText);
 
 })
 
 
-function addItemToYearPanels(itemId,spotBegYear){
+function addItemToYearPanels(itemId,spotBegYear,labelText){
 
 
     
@@ -67,8 +62,17 @@ function addItemToYearPanels(itemId,spotBegYear){
         // var cln = newInputfield.cloneNode(true);
         // document.getElementById('year' + spotBegYear).appendChild(cln);
 
+        
+
+        var newlabel = document.createElement('label');
+        var newLabelText = document.createTextNode(labelText);
+        newlabel.appendChild(newLabelText);
+
         var newInputfield = document.createElement('input');
         newInputfield.setAttribute('id',itemId + spotBegYear);
+
+
+        document.getElementById('year' + spotBegYear).appendChild(newlabel);
         document.getElementById('year' + spotBegYear).appendChild(newInputfield);
 
 
@@ -85,7 +89,7 @@ function addItemToYearPanels(itemId,spotBegYear){
 function createTabsNPanels(year){
 
 
-while (year < currentYear){
+while (year < currentYear){  // 2014 < 2020
    
    
     createNewTab(year);
@@ -116,7 +120,10 @@ function createNewTab(tabYear){
         newAnchor.setAttribute('aria-selected','false');
         newAnchor.appendChild(document.createTextNode(tabYear));
 
-
+ // 1- create LI
+ // 2- create Anchor
+ // 3- append anchor inside LI
+ // 4- append LI to UL
 
 
         newListItem.appendChild(newAnchor);

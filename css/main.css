@@ -21,6 +21,14 @@ section , footer {
     height: 300px;
 }
 
+div.incomeStatement .row {
+    margin-top: 40px;
+}
+
+.col-md-9 div.incomeStatement  {
+    border: 2px solid #dee2e6;
+}
+
 #about div.video iframe {
     height: 300px;
     width: 100%;
@@ -30,6 +38,18 @@ footer {
     background: #222;
     color: #fefefe;
     padding-bottom: 20px;
+}
+
+ul#list li {
+    cursor: pointer;
+    list-style-type: none;
+    padding: 4px; 
+    transition: padding 1s;
+}
+
+ul#list li:hover {
+    background: #dcdcdc;
+    padding: 4px 4px 4px 20px;
 }
 
 footer #copyRight {
