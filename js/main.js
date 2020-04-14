@@ -55,14 +55,18 @@ function addItemToYearPanels(itemId,spotBegYear,labelText){
 
     
     
-
+    // var holderOrder = 0;
 
     for(spotBegYear; spotBegYear < currentYear;spotBegYear++){
  
+
+        
+
         // var cln = newInputfield.cloneNode(true);
         // document.getElementById('year' + spotBegYear).appendChild(cln);
 
-        
+        // var holder = document.createElement('div');
+        // holder.setAttribute('id',itemId + spotBegYear + holderOrder);
 
         var newlabel = document.createElement('label');
         var newLabelText = document.createTextNode(labelText);
@@ -72,10 +76,13 @@ function addItemToYearPanels(itemId,spotBegYear,labelText){
         newInputfield.setAttribute('id',itemId + spotBegYear);
 
 
+        // document.getElementById('year' + spotBegYear).appendChild(holder);
+        // document.getElementsByClassName('holder')[holderOrder].appendChild(newlabel);
+        // document.getElementsByClassName('holder')[holderOrder].appendChild(newInputfield);
         document.getElementById('year' + spotBegYear).appendChild(newlabel);
         document.getElementById('year' + spotBegYear).appendChild(newInputfield);
 
-
+        // holderOrder++;
 
         // newPanel.setAttribute('class','fade');
         
