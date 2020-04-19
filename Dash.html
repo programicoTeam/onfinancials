@@ -1,0 +1,277 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row" style="background-color: lightslategray;">
+            <div class="col-md-12">
+                <h1 style="text-align: center;padding: 10px">Overall performance </h1>
+            </div>
+          </div> 
+     
+    </div>
+    <div class="container-fluid" style="padding-top: 10px;">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Liquidity</h3>
+                <p>Meeting short term obligations</p>
+                <p>Ability to meet short term obligations after excluding Inventory</p>
+                <p>Ability to meet short term opligations with cash only</p>
+                </div>
+       <div class="col-md-3">
+           <h3>Profitability</h3>
+           <p>Ability to generate profit from main operations</p>
+           <p>Ability to generate profit from total cash operations </p>
+           <p>Ability to generate net profit</p>
+           <p>generating returns on the capital invested</p>
+                 </div>
+
+       <div class="col-md-3">
+           <h3>Management efficiency</h3>
+           <p>credit clients position</p>
+           <p>inventory handling</p>
+           <p>suppliers on credit position</p>
+           <p>Cash conversion cycle </p>
+                </div>
+
+    <div class="col-md-3">
+           <h3>Leverage & Interest</h3>
+           <p>financial leverage position</p>
+           <p>interest bearing debts positions</p>
+           <p>Interest Coverage - DSCR</p>
+            </div>
+
+            <div class="col-md-6" style="padding-top: 15px;">
+                <h3 style="text-align: center;">Year:</h3>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                  </select>
+            </div>
+            <div class="col-md-6" style="padding-top: 15px;">
+                <h3 style="text-align: center;">Market Conditions similar to:</h3>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>US</option>
+                    <option>Europe</option>
+                    <option>Japan</option>
+                    <option>Emerging Markets</option>
+                    <option>Just China</option>
+                    <option>Just India</option>
+                    <option>Global</option>
+                  </select>
+            </div>
+        </div>
+    </div>
+<br>
+   <div class="container-fluid">
+       <div class="row">
+         <div class="col-md-12">
+           <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Liquidity</th>
+                <th scope="col">how to calculate </th>
+                <th scope="col">Ratio</th>
+                <th scope="col">Comparable</th>
+                <th scope="col">result</th>
+                <th scope="col">red to green</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Meeting short term obligations</th>
+                <td>Current Ratio</td>
+                <td><input type="number"></td>
+                <td>1.00x</td>
+                <td>compared to comparable higher is better</td>
+                <td>Attention</td>
+              </tr>
+              <tr>
+                <th>Ability to meet short term obligations after excluding Inventory</th>
+                <td>Quick Ratio</td>
+                <td><input type="number"></td>
+                <td>1.00x</td>
+                <td>compared to comparable higher is better</td>
+                <td>Attention</td>
+              </tr>
+              <tr>
+                <th>Ability to meet short term opligations with cash only</th>
+                <td>Cash Ratio</td>
+                <td><input type="number"></td>
+                <td>0.50x</td>
+                <td>compared to comparable higher is better</td>
+                <td>Attention</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Profitability</th>
+                <th scope="col">how to calculate </th>
+                <th scope="col">Ratio</th>
+                <th scope="col">Comparable</th>
+                <th scope="col">result</th>
+                <th scope="col">red to green</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Ability to generate profit from main operations</th>
+                <td>Gross Margin</td>
+                <td><input type="number"></td>
+                <td></td>
+                <td>compared to comparable higher is better</td>
+                <td>Attention</td>
+              </tr>
+              <tr>
+                <th>Ability to generate profit from total cash operations </th>
+                <td>EBITDA/Sales</td>
+                <td><input type="number"></td>
+                <td></td>
+                <td>compared to comparable higher is better</td>
+                <td>Attention</td>
+              </tr>
+              <tr>
+                <th>Ability to generate net profit</th>
+                <td>Net Margin</td>
+                <td><input type="number"></td>
+                <td></td>
+                <td>compared to comparable higher is better</td>
+                <td>Attention</td>
+              </tr>
+              <tr>
+                <th>generating returns on the capital invested</th>
+                <td>ROE</td>
+                <td><input type="number"></td>
+                <td></td>
+                <td>compared to comparable higher is better</td>
+                <td>Attention</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Activity</th>
+                <th scope="col">how to calculate </th>
+                <th scope="col">Ratio</th>
+                <th scope="col">Comparable</th>
+                <th scope="col">result</th>
+                <th scope="col">red to green</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>credit clients positio</th>
+                <td>AR/ Sales</td>
+                <td><input type="number"></td>
+                <td></td>
+                <td>compared to comparable higher is better</td>
+                <td>Attention</td>
+              </tr>
+              <tr>
+                <th>inventory handling</th>
+                <td>Inv. /Sales</td>
+                <td><input type="number"></td>
+                <td></td>
+                <td>compared to comparable higher is better</td>
+                <td>Attention</td>
+              </tr>
+              <tr>
+                <th>suppliers on credit position</th>
+                <td>AP/Sales </td>
+                <td><input type="number"></td>
+                <td></td>
+                <td>compared to comparable higher is better</td>
+                <td>Attention</td>
+              </tr>
+              <tr>
+                <th>Cash conversion cycle</th>
+                <td>WC excluding cash/Sales</td>
+                <td><input type="number"></td>
+                <td></td>
+                <td>compared to comparable higher is better</td>
+                <td>Attention</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+
+
+
+
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Capital Structure</th>
+                <th scope="col">how to calculate </th>
+                <th scope="col">Ratio</th>
+                <th scope="col">Comparable</th>
+                <th scope="col">result</th>
+                <th scope="col">red to green</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>financial leverage position</th>
+                <td>liab/equity</td>
+                <td><input type="number"></td>
+                <td>2.00x</td>
+                <td>compared to comparable higher is better</td>
+                <td>Attention</td>
+              </tr>
+              <tr>
+                <th>interest bearing debts positions</th>
+                <td>Book Debt to Capital</td>
+                <td><input type="number"></td>
+                <td>1.00x</td>
+                <td>compared to comparable higher is better</td>
+                <td>Attention</td>
+              </tr>
+              <tr>
+                <th>Interest Coverage - DSCR</th>
+                <td>EBIT/Total debt service</td>
+                <td><input type="number"></td>
+                <td>1.00x</td>
+                <td>compared to comparable higher is better</td>
+                <td>Attention</td>
+              </tr>
+            
+            </tbody>
+          </table>
+
+         </div>  
+       </div>
+   </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="form-group">
+                <label for="txt">Comments</label>
+                <textarea class="form-control" id="txtArea" rows="3"></textarea>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
