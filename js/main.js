@@ -29,6 +29,21 @@ function getValue() {
   let element2 = document.getElementById("myTabContent").firstElementChild;
   element2.classList.toggle("active");
 
+  let element3 = document.getElementById("myTab2").firstElementChild
+  .firstElementChild;
+element3.classList.toggle("active");
+
+let element4 = document.getElementById("myTabContent2").firstElementChild;
+  element4.classList.toggle("active");
+
+
+  let element5 = document.getElementById("myTab3").firstElementChild
+  .firstElementChild;
+element5.classList.toggle("active");
+
+let element6 = document.getElementById("myTabContent3").firstElementChild;
+  element6.classList.toggle("active");
+
 }
 
 document.getElementById("list").addEventListener("click", function (e) {
@@ -81,13 +96,21 @@ function createTabsNPanels(year) {
       //clear conetn on select change
    $('#myTab').empty();
    $('#myTabContent').empty();
+   $('#myTab2').empty();
+   $('#myTabContent2').empty();
+   $('#myTab3').empty();
+   $('#myTabContent3').empty();
 
   while (year < currentYear) {
     // 2014 < 2020
 
     createNewTab(year);
+    createNewTab2(year);
+    createNewTab3(year);
 
     createNewPAnel(year);
+    createNewPAnel2(year);
+    createNewPAnel3(year);
 
     year++;
   }
@@ -119,6 +142,58 @@ function createNewTab(tabYear) {
   tabs.appendChild(newListItem);
 }
 
+function createNewTab2(tabYear) {
+  // create new tab
+  let newListItem = document.createElement("li");
+  newListItem.setAttribute("class", "nav-item");
+
+  let newAnchor = document.createElement("a");
+  newAnchor.setAttribute("class", "nav-link");
+  newAnchor.setAttribute("href", "#year" + tabYear);
+  newAnchor.setAttribute("id", "year" + tabYear + "-tab");
+  newAnchor.setAttribute("data-toggle", "tab");
+  newAnchor.setAttribute("role", "tab");
+  newAnchor.setAttribute("aria-controls", "contact");
+  newAnchor.setAttribute("aria-selected", "false");
+  newAnchor.appendChild(document.createTextNode(tabYear));
+
+  // 1- create LI
+  // 2- create Anchor
+  // 3- append anchor inside LI
+  // 4- append LI to UL
+
+  newListItem.appendChild(newAnchor);
+
+  let tabs = document.getElementById("myTab2");
+  tabs.appendChild(newListItem);
+}
+
+function createNewTab3(tabYear) {
+  // create new tab
+  let newListItem = document.createElement("li");
+  newListItem.setAttribute("class", "nav-item");
+
+  let newAnchor = document.createElement("a");
+  newAnchor.setAttribute("class", "nav-link");
+  newAnchor.setAttribute("href", "#year" + tabYear);
+  newAnchor.setAttribute("id", "year" + tabYear + "-tab");
+  newAnchor.setAttribute("data-toggle", "tab");
+  newAnchor.setAttribute("role", "tab");
+  newAnchor.setAttribute("aria-controls", "contact");
+  newAnchor.setAttribute("aria-selected", "false");
+  newAnchor.appendChild(document.createTextNode(tabYear));
+
+  // 1- create LI
+  // 2- create Anchor
+  // 3- append anchor inside LI
+  // 4- append LI to UL
+
+  newListItem.appendChild(newAnchor);
+
+  let tabs = document.getElementById("myTab3");
+  tabs.appendChild(newListItem);
+}
+
 function createNewPAnel(tabYear) {
   // create panel for the tab
 
@@ -131,6 +206,40 @@ function createNewPAnel(tabYear) {
   newPanel.setAttribute("id", "year" + tabYear);
 
   var myTabContent = document.getElementById("myTabContent");
+
+  myTabContent.appendChild(newPanel);
+}
+
+function createNewPAnel2(tabYear) {
+  // create panel for the tab
+
+  let newPanel = document.createElement("div");
+  newPanel.setAttribute("class", "yearPanel");
+  newPanel.setAttribute("class", "tab-pane");
+  // newPanel.setAttribute('class','fade');
+  newPanel.setAttribute("role", "tabpanel" + tabYear);
+  newPanel.setAttribute("aria-labelledby", "contact-tab" + tabYear);
+  newPanel.setAttribute("id", "year" + tabYear);
+
+  let myTabContent = document.getElementById("myTabContent2");
+
+  myTabContent.appendChild(newPanel);
+}
+
+
+
+function createNewPAnel3(tabYear) {
+  // create panel for the tab
+
+  let newPanel = document.createElement("div");
+  newPanel.setAttribute("class", "yearPanel");
+  newPanel.setAttribute("class", "tab-pane");
+  // newPanel.setAttribute('class','fade');
+  newPanel.setAttribute("role", "tabpanel" + tabYear);
+  newPanel.setAttribute("aria-labelledby", "contact-tab" + tabYear);
+  newPanel.setAttribute("id", "year" + tabYear);
+
+  let myTabContent = document.getElementById("myTabContent3");
 
   myTabContent.appendChild(newPanel);
 }
