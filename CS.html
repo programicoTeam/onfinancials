@@ -1,0 +1,985 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+              <label>Choose:</label>
+              <select class="custom-select" id="chooseSelection">
+                <option selected>Please select</option>
+                <option value="1">Actual</option>
+                <option value="2">Budget</option>
+                </select>  
+            </div>
+            <div class="col-md-6">
+                <label>Breakdown:</label>
+                <select class="custom-select" id="chooseSelection">
+                  <option selected>Please select</option>
+                  <option value="1">Weekly</option>
+                  <option value="2">Monthly</option>
+                  <option value="3">Quarterly</option>
+                  <option value="4">Half Year</option>
+                  <option value="5">Full Year</option>
+                  </select>  
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="padding-top: 25px;">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">2014</th>
+                        <th scope="col">2015</th>
+                        <th scope="col">2016</th>
+                        <th scope="col">2017</th>
+                        <th scope="col">2018</th>
+                        <th scope="col">2019</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Net sales</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cost of goods sold</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Depreciation</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr style="background-color: #dbd96a;">
+                        <th scope="row" style="background-color: #fff;">Gross Profit</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">SG&A expense</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">FX gain (or loss)</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Provisions</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Good will amortization</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Other amortization</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr style="background-color: #dbd96a;">
+                        <th scope="row" style="background-color: #fff;">Net operating profit (EBIT)</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gross interest exp--exist</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Write offs</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Interest Income</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Other income/Not specified</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Equity income (associates/others)</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">G/L from sale of fix assets & operations</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gains from sale of subs & other</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color:azure;">Net Profit Before Tax</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color:azure;">Total tax expense</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Current tax expense</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Deferred tax expense</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">Net Profit After Tax</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Minority interest expense</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gain/loss on sale of plant</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Other extraordinary item</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">Net profit</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Preferred dividends</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Common dividends</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Other adjustment</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">Total Change in R/E</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cash</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Time deposits</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Marketable securities</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Accounts receivable</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Less: allowances</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">Net receivables</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Raw materials</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Work in progress</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Finished goods</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Spare Parts</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">GIT / Other</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">Net inventory</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Advance payment</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">*Due from sister co (st)</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Other receivables</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">TOTAL CURRENT ASSETS</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Land and buildings</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Machinery & equipment</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Other equipment</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Construction in progress</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Gross pp&e</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Less: accumulated dep</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">Net plant property & equipment</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Investments (associates)</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Due from sisters (Lt)</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Lt receivables</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Deferred tax asset</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Prepaid & accruals</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Goodwill</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Other intangible asset</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Less: accum. amortization</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">Net intangibles</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">TOTAL NON-CURRENT ASSETS</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">TOTAL ASSETS</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Short term borrowing--existing</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cp senior debt--existing</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cp cap lease</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cp sub debt--existing</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cp Ltd</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Accounts payable - Suppliers -</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">A/E</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Down payments</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">*Due to sister co (st)</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Taxes payable</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Interest payable</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Dividends payable</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Other current liability</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">TOTAL CURRENT LIABILITIES</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Lt lease obligation</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Lt senior debt--existing</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Lt sub debt--existing</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">TOTAL LONG-TERM DEBT</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Due to sister co (Lt)</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Pension and similar provisions</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Restruct., warranty and oth prov.</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Deferred taxes</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Shareholders loan</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">TOTAL LIABILITIES</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Minority interest</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Preferred stock</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Common stock</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Additional paid-in capital</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Retained earnings opening</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">Plus: net profit</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">Less: dividends</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">Other adjustments</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">Retained earnings closing</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Restricted reserves</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Fx translation reserve</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Other Equity reserves</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Treasury stock (at cost)</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">TOTAL EQUITY</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" style="background-color: azure;">TOTAL LIABS & EQUITY</th>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                        <td>23%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
