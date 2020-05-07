@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon-->
+  <!-- <link rel="shortcut icon" href="img/fav.png"> -->
+  <!-- Meta Description -->
+  <meta name="description" content="">
+  <!-- Meta Keyword -->
+  <meta name="keywords" content="">
+  <!-- meta character set -->
+  <meta charset="UTF-8">
+  <!-- Site Title -->
+  <title>onFin | Graphs</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+  <!--
+			CSS
+			============================================= -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+
+
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
+
+
+  <style>
+    .table td,
+    .table th {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">onFin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Pages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Budget</a>
+            <a class="dropdown-item" href="#">Progress</a>
+            <!-- <div class="dropdown-divider"></div> -->
+            <a class="dropdown-item" href="#">Bp vs p</a>
+            <a class="dropdown-item" href="#">Dashboard</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="companyDetails">
+          <select class="form-control" id="displayData" style="width: auto;">
+            <option>Historical Or Budget:</option>
+            <option>Actual</option>
+            <option>Budget</option>
+          </select>
+
+          <select class="form-control" id="breakdown" style="width: auto;">
+            <option>Breakdown:</option>
+            <option>Month</option>
+            <option>Quarter</option>
+            <option>Half Year</option>
+            <option>Full Year</option>
+          </select>
+
+
+          <select class="form-control" id="addProgress" style="width: auto;">
+            <option>Add Progress (If Any):</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <!-- <div class="guide">
+          you can download our guide by clicking on this like
+        </div> -->
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-9" style="margin: 0 auto; padding: 1rem;">
+        <div class="card">
+          <h5 class="card-header">Operating Performance:</h5>
+          <div class="card-body">
+            <!-- <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+             -->
+            
+            <canvas id="operatingPerformance"></canvas>
+
+
+          </div>
+        </div>
+        <br>
+        <div class="card">
+          <h5 class="card-header">Financial Structure:</h5>
+          <div class="card-body">
+            <!-- <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+             -->
+            
+            <canvas id="financialStructure"></canvas>
+
+
+          </div>
+        </div>
+
+
+        <br>
+
+        <div class="card">
+          <h5 class="card-header">Profit Margin:</h5>
+          <div class="card-body">
+            <!-- <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+             -->
+            
+            <canvas id="profitMargin"></canvas>
+
+
+          </div>
+        </div>
+
+
+        <br>
+
+        <div class="card">
+          <h5 class="card-header">EBITDA:</h5>
+          <div class="card-body">
+            <!-- <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+             -->
+            
+            <canvas id="eitda"></canvas>
+
+
+          </div>
+        </div>
+
+
+        <br>
+
+        <div class="card">
+          <h5 class="card-header">Profit:</h5>
+          <div class="card-body">
+            <!-- <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+             -->
+            
+            <canvas id="profit"></canvas>
+
+
+          </div>
+        </div>
+
+
+        <br>
+
+        <div class="card">
+          <h5 class="card-header">Fixed Assets:</h5>
+          <div class="card-body">
+            <!-- <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+             -->
+            
+            <canvas id="fixedAssets"></canvas>
+
+
+          </div>
+        </div>
+
+
+
+        <br>
+
+        <div class="card">
+          <h5 class="card-header">Liquidity:</h5>
+          <div class="card-body">
+            <!-- <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+             -->
+            
+            <canvas id="liquidity"></canvas>
+
+
+          </div>
+        </div>
+
+
+
+        <br>
+
+        <div class="card">
+          <h5 class="card-header">Debt:</h5>
+          <div class="card-body">
+            <!-- <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+             -->
+            
+            <canvas id="debt"></canvas>
+
+
+          </div>
+        </div>
+
+
+
+        <br>
+
+        <div class="card">
+          <h5 class="card-header">Sales:</h5>
+          <div class="card-body">
+            <!-- <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+             -->
+            
+            <canvas id="sales"></canvas>
+
+
+          </div>
+        </div>
+        
+
+
+      </div>
+    </div>
+
+
+  
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <!-- start footer -->
+  <footer>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-3">
+
+          <h3>LOGO</h3>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <h3>Recent News</h3>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <h3>Useful Links</h3>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <h3>Contact Form</h3>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="copyRight" class="text-center">
+      &copy; 2020 | Designed &amp; Developed by <a href="#">onFin Team</a>
+    </div>
+
+
+  </footer>
+  <!-- end footer -->
+
+
+  <!--	script-->
+  <!--	jquery-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!--	popper-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <!--	bootstrap js-->
+  <script src="js/bootstrap.min.js"></script>
+  <!--	custom js-->
+  <script src="js/main.js"></script>
+
+  <script src="js/graphs.js"></script>
+  <!--	end script-->
+</body>
+
+</html>

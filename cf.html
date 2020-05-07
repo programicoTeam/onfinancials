@@ -1,0 +1,941 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon-->
+  <!-- <link rel="shortcut icon" href="img/fav.png"> -->
+  <!-- Meta Description -->
+  <meta name="description" content="">
+  <!-- Meta Keyword -->
+  <meta name="keywords" content="">
+  <!-- meta character set -->
+  <meta charset="UTF-8">
+  <!-- Site Title -->
+  <title>onFin | Cash Flow</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+  <!--
+			CSS
+			============================================= -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <style>
+    .table td, .table th {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">onFin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Pages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Budget</a>
+            <a class="dropdown-item" href="#">Progress</a>
+            <!-- <div class="dropdown-divider"></div> -->
+            <a class="dropdown-item" href="#">Bp vs p</a>
+            <a class="dropdown-item" href="#">Dashboard</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="companyDetails">
+          <select class="form-control" id="displayData" style="width: auto;">
+            <option>Historical Or Budget Or Progress:</option>
+            <option>Actual</option>
+            <option>Budget</option>
+            <option>Progress</option>
+          </select>
+
+          <select class="form-control" id="breakdown" style="width: auto;">
+            <option>Breakdown:</option>
+            <option>Month</option>
+            <option>Quarter</option>
+            <option>Half Year</option>
+            <option>Full Year</option>
+          </select>
+
+          <!-- <select onchange="getValue()" id="begYear" class="form-control">
+            <option>Please Select year</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+          </select>
+
+          <select class="form-control">
+            <option>Please Select Industry</option>
+            <option>Advertising</option>
+            <option>Advertising</option>
+            <option>Advertising</option>
+            <option>Advertising</option>
+            <option>Advertising</option>
+            <option>Advertising</option>
+          </select> -->
+        </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <!-- <div class="guide">
+          you can download our guide by clicking on this like
+        </div> -->
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Net receivables</td>
+              <td>2810399</td>
+            </tr>
+            <tr>
+              <td>Net inventory</td>
+              <td>6015352</td>
+            </tr>
+            <tr>
+              <td>Advance payment</td>
+              <td>9514554</td>
+            </tr>
+            <tr>
+              <td>*Due from sister co (st)</td>
+              <td>333559107</td>
+            </tr>
+            <tr>
+              <td>Accounts payable - Suppliers -</td>
+              <td>542538413</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <div style="background-color: blue; text-align: center; padding: 35% 0; color: white;"><b>Net Cash Change
+          </b><br>+555,669,553</div>
+      </div>
+
+      <div class="col-md-4">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Item</th>
+              <th scope="col">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Taxes paid</td>
+              <td>51278464</td>
+            </tr>
+            <tr>
+              <td>Prepaid & accruals</td>
+              <td>38283362</td>
+            </tr>
+            <tr>
+              <td>Other receivables</td>
+              <td>25469143</td>
+            </tr>
+            <tr>
+              <td>Other current asset</td>
+              <td>25149433</td>
+            </tr>
+            <tr>
+              <td>Other current liability</td>
+              <td>17188284</td>
+            </tr>
+            <tr>
+              <td>Advance payment</td>
+              <td>6581814</td>
+            </tr>
+
+            <tr>
+              <td>*Due from sister co (st)</td>
+              <td>411834</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="companyDetails">
+          <select class="form-control" id="displayData2" style="width: auto;">
+            <option>Historical Or Budget:</option>
+            <option>Actual</option>
+            <option>Budget</option>
+          </select>
+
+          <select class="form-control" id="breakdown2" style="width: auto;">
+            <option>Breakdown:</option>
+            <option>Month</option>
+            <option>Quarter</option>
+            <option>Half Year</option>
+            <option>Full Year</option>
+          </select>
+
+          <!-- <select onchange="getValue()" id="begYear" class="form-control">
+            <option>Please Select year</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2019</option>
+          </select>
+  
+           -->
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+      <table class="table table-striped">
+  
+          <thead class="table-active">
+              <tr style="text-align: center;
+            font-size: 1.4rem;
+            font-family: sans-serif;">
+                  <th scope="col" colspan="2">Item</th>
+                  <th scope="col">2015<br>Q1</th>
+                  <th scope="col">2016<br>Q1</th>
+                  <th scope="col">2017<br>Q1</th>
+                  <th scope="col">2018<br>Q1</th>
+                  <th scope="col">2019<br>Q1</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th scope="row">EBITDA</th>
+                  <td></td>
+                  <td>236451039</td>
+                  <td>333559107</td>
+                  <td>276932285</td>
+                  <td>352920894.2</td>
+                  <td>383559892.155</td>
+              </tr>
+  
+              <tr>
+                  <th scope="row"></th>
+                  <td>Taxes paid</td>
+                  <td>-25380677</td>
+                  <td>-38283362</td>
+                  <td>-98929460</td>
+                  <td>-186708062.72</td>
+                  <td>-84200763.2636251</td>
+              </tr>
+  
+  
+              <tr>
+                  <th scope="row">GROSS OPERATING CASH FLOW (COPAT)</th>
+                  <td></td>
+                  <td>211070362</td>
+                  <td>295275745</td>
+                  <td>178002825</td>
+                  <td>166212831.48</td>
+                  <td>299359128.891375</td>
+              </tr>
+  
+              <tr>
+                  <th scope="row"></th>
+                  <td>Net receivables</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Net inventory</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Advance payment</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>*Due from sister co (st)</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Accounts payable - Suppliers -</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>A/E</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Down payments</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>*Due to sister co (st)</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+  
+  
+  
+  
+  
+  
+  
+              <tr>
+                  <th scope="row">Net Chg Working Investment</th>
+                  <td></td>
+                  <td>211070362</td>
+                  <td>295275745</td>
+                  <td>178002825</td>
+                  <td>166212831.48</td>
+                  <td>299359128.891375</td>
+              </tr>
+  
+  
+              <tr>
+                  <th scope="row"></th>
+                  <td>Prepaid & accruals</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Other receivables</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Other current asset</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Other current liability</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+  
+  
+  
+  
+  
+              <tr>
+                  <th scope="row">CASH AFTER CURRENT OPERATIONS (CACO)</th>
+                  <td></td>
+                  <td>211070362</td>
+                  <td>295275745</td>
+                  <td>178002825</td>
+                  <td>166212831.48</td>
+                  <td>299359128.891375</td>
+              </tr>
+  
+  
+  
+  
+              <tr>
+                  <th scope="row"></th>
+                  <td>Interest paid</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Cp Ltd--existing</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Cp Ltd--new</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Cp lease</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+  
+              <tr>
+                  <th scope="row"></th>
+                  <td>Preferred dividends</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+  
+  
+              <tr>
+                  <th scope="row">Financing payment</th>
+                  <td></td>
+                  <td>211070362</td>
+                  <td>295275745</td>
+                  <td>178002825</td>
+                  <td>166212831.48</td>
+                  <td>299359128.891375</td>
+              </tr>
+  
+              <tr>
+                  <th scope="row"></th>
+                  <td>Common dividends paid</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+  
+  
+  
+              <tr>
+                  <th scope="row">Total financial charges (financing pmt+dividends)</th>
+                  <td></td>
+                  <td>211070362</td>
+                  <td>295275745</td>
+                  <td>178002825</td>
+                  <td>166212831.48</td>
+                  <td>299359128.891375</td>
+              </tr>
+              <tr>
+                  <th scope="row">CASH FLOW BEFORE INVESTING</th>
+                  <td></td>
+                  <td>211070362</td>
+                  <td>295275745</td>
+                  <td>178002825</td>
+                  <td>166212831.48</td>
+                  <td>299359128.891375</td>
+              </tr>
+  
+  
+              <tr>
+                  <th scope="row"></th>
+                  <td>Net plant expenditures</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Investments (associates)</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Lt receivables</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Net intangibles</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Interest Income</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Other income/Not specified</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Sundry income (expense)</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Gain/loss on sale of plant</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Other unusual item</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+              <tr>
+                  <th scope="row">CASH FLOW BEFORE FINANCING</th>
+                  <td></td>
+                  <td>211070362</td>
+                  <td>295275745</td>
+                  <td>178002825</td>
+                  <td>166212831.48</td>
+                  <td>299359128.891375</td>
+              </tr>
+  
+  
+              <tr>
+                  <th scope="row"></th>
+                  <td>Std</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Ltd</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Lease</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Lt group finance</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Lt provisions</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Minority interest</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Shareholders loan</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Equity</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+  
+  
+  
+  
+  
+  
+              <tr>
+                  <th scope="row">OPENING CASH BALANCE</th>
+                  <td></td>
+                  <td>211070362</td>
+                  <td>295275745</td>
+                  <td>178002825</td>
+                  <td>166212831.48</td>
+                  <td>299359128.891375</td>
+              </tr>
+  
+              <tr>
+                  <th scope="row"></th>
+                  <td>Cash flow from operations</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Cash flow from investing</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+              <tr>
+                  <th scope="row"></th>
+                  <td>Cash flow from financing</td>
+                  <td>-30825391</td>
+                  <td>-25469143</td>
+                  <td>-20134847</td>
+                  <td>-23638239.339726</td>
+                  <td>-10006762.0339726</td>
+              </tr>
+  
+  
+              <tr>
+                  <th scope="row">NET CASH FLOW</th>
+                  <td></td>
+                  <td>211070362</td>
+                  <td>295275745</td>
+                  <td>178002825</td>
+                  <td>166212831.48</td>
+                  <td>299359128.891375</td>
+              </tr>
+  
+              <tr>
+                  <th scope="row">CLOSING CASH BALANCE</th>
+                  <td></td>
+                  <td>211070362</td>
+                  <td>295275745</td>
+                  <td>178002825</td>
+                  <td>166212831.48</td>
+                  <td>299359128.891375</td>
+              </tr>
+  
+              <!-- <tr>
+                  <th scope="row" colspan="7">test</th>
+              </tr> -->
+  
+          </tbody>
+      </table>
+  </div>
+
+    <!-- <div class="row">
+      <div class="col-md-9">
+
+        <div class="tab">
+          <button class="tablinks" onclick="openSection(event, 'incomeStatement')" id="defaultOpen">Income
+            Statement</button>
+          <button class="tablinks" onclick="openSection(event, 'assets')">Assets</button>
+          <button class="tablinks" onclick="openSection(event, 'liabsEquity')">Liabs & Equity</button>
+        </div>
+
+        <div class="incomeStatement tabcontent" id="incomeStatement">
+
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+          </ul>
+          <div class="tab-content" id="myTabContent">
+
+          </div>
+
+        </div>
+
+
+        <div class="incomeStatement tabcontent" id="assets">
+
+          <ul class="nav nav-tabs" id="myTab2" role="tablist">
+
+          </ul>
+          <div class="tab-content" id="myTabContent2">
+
+          </div>
+
+        </div>
+
+
+        <div class="incomeStatement tabcontent" id="liabsEquity">
+
+          <ul class="nav nav-tabs" id="myTab3" role="tablist">
+
+          </ul>
+          <div class="tab-content" id="myTabContent3">
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="col-md-3">
+
+
+        <ul id="list">
+          <li id="netSales"><i class="far fa-plus-square"></i>Net sales</li>
+          <li id="netSalesAvg"><i class="far fa-plus-square"></i>Net Sales (avg/unites)</li>
+          <li id="costOfGods"><i class="far fa-plus-square"></i>Cost of goods sold</li>
+          <li id="cogs"><i class="far fa-plus-square"></i>Depreciation COGS</li>
+          <li id="sga"><i class="far fa-plus-square"></i>Depreciation SG&A</li>
+          <li id="sgaExpense"><i class="far fa-plus-square"></i>SG&A expense</li>
+          <li id="provisions"><i class="far fa-plus-square"></i>Provisions</li>
+          <li id="fxGain"><i class="far fa-plus-square"></i>FX gain (or loss)</li>
+          <li id="goodWillAmor"><i class="far fa-plus-square"></i>Good will amortization</li>
+          <li id="otherAmor"><i class="far fa-plus-square"></i>Other amortization</li>
+          <li id="grossInterest"><i class="far fa-plus-square"></i>Gross interest exp--exist</li>
+          <li id="writeOffs"><i class="far fa-plus-square"></i>Write offs</li>
+          <li id="intersetIncome"><i class="far fa-plus-square"></i>Interest Income</li>
+          <li id="otherIncome"><i class="far fa-plus-square"></i>Other income/Not specified</li>
+          <li id="equityIncome"><i class="far fa-plus-square"></i>Equity income (associates/others)</li>
+          <li id="saleOfFixAssets"><i class="far fa-plus-square"></i>G/L from sale of fix assets & operations</li>
+          <li id="saleOfSubs"><i class="far fa-plus-square"></i>Gains from sale of subs & other</li>
+          <li id="totalTaxExpense"><i class="far fa-plus-square"></i>Total tax expense</li>
+          <li id="minorityIntersetExp"><i class="far fa-plus-square"></i>Minority interest expense</li>
+          <li id="saleOfPlant"><i class="far fa-plus-square"></i>Gain/loss on sale of plant</li>
+          <li id="otherExtraItem"><i class="far fa-plus-square"></i>Other extraordinary item</li>
+          <li id="prefDivinds"><i class="far fa-plus-square"></i>Preferred dividends</li>
+          <li id="commDivinds"><i class="far fa-plus-square"></i>Common dividends</li>
+          <li id="otherAdjust"><i class="far fa-plus-square"></i>Other adjustment in Retained Earnings</li>
+        </ul>
+
+      </div>
+
+    </div> -->
+
+  </div>
+
+
+
+
+
+
+
+
+  <!-- start footer -->
+  <footer>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-3">
+
+          <h3>LOGO</h3>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <h3>Recent News</h3>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <h3>Useful Links</h3>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <h3>Contact Form</h3>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="copyRight" class="text-center">
+      &copy; 2020 | Designed &amp; Developed by <a href="#">onFin Team</a>
+    </div>
+
+
+  </footer>
+  <!-- end footer -->
+
+
+  <!--	script-->
+  <!--	jquery-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!--	popper-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <!--	bootstrap js-->
+  <script src="js/bootstrap.min.js"></script>
+  <!--	custom js-->
+  <script src="js/main.js"></script>
+  <!--	end script-->
+</body>
+
+</html>
+</body>
+
+</html>
+
+
