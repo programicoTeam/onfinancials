@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+
+<head>
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon-->
+  <!-- <link rel="shortcut icon" href="img/fav.png"> -->
+  <!-- Meta Description -->
+  <meta name="description" content="">
+  <!-- Meta Keyword -->
+  <meta name="keywords" content="">
+  <!-- meta character set -->
+  <meta charset="UTF-8">
+  <!-- Site Title -->
+  <title>onFin | Reports</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+  <!--
+			CSS
+			============================================= -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <style>
+    /* .table td, .table th {
+      text-align: center;
+    } */
+
+    div.sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      background-color: yellow;
+      padding: 50px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">onFin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Pages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Budget</a>
+            <a class="dropdown-item" href="#">Progress</a>
+            <!-- <div class="dropdown-divider"></div> -->
+            <a class="dropdown-item" href="#">Bp vs p</a>
+            <a class="dropdown-item" href="#">Dashboard</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <h5>Reports:</h5>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Report Name</th>
+                        <th scope="col">Choose</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Historical financial statements including cashflow statement - Annually</td>
+                        <td>-</td>
+                        <td><button type="button" class="btn btn-info">Show</button></td>
+                        <td><button type="button" class="btn btn-info">Download</button></td>
+                    </tr>
+                    <tr>
+                        <td>Historical financial statements including cashflow statement - Monthly</td>
+                        <td><select class="form-control">
+                                <option>Choose month:</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select></td>
+                        <td><button type="button" class="btn btn-info">Show</button></td>
+                        <td><button type="button" class="btn btn-info">Download</button></td>
+                    </tr>
+                    <tr>
+                        <td>Historical financial statements including cashflow statement - Quarterly</td>
+                        <td><select class="form-control">
+                                <option>Choose quarter:</option>
+                                <option>Q1</option>
+                                <option>Q2</option>
+                                <option>Q3</option>
+                                <option>Q4</option>
+                            </select></td>
+                        <td><button type="button" class="btn btn-info">Show</button></td>
+                        <td><button type="button" class="btn btn-info">Download</button></td>
+                    </tr>
+                    <tr>
+                        <td>Historical financial statements including cashflow statement - Semi Annual</td>
+                        <td><select class="form-control">
+                                <option>Choose semi annual:</option>
+                                <option>1st Half</option>
+                                <option>2nd Half</option>
+                            </select></td>
+                        <td><button type="button" class="btn btn-info">Show</button></td>
+                        <td><button type="button" class="btn btn-info">Download</button></td>
+                    </tr>
+                    <tr>
+                        <td>Budget financial statements including cashflow statement - Annually</td>
+                        <td>-</td>
+                        <td><button type="button" class="btn btn-info">Show</button></td>
+                        <td><button type="button" class="btn btn-info">Download</button></td>
+                    </tr>
+    
+    
+                    <tr>
+                        <td>Budget financial statements including cashflow statement - Monthly</td>
+                        <td><select class="form-control">
+                                <option>Choose month:</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select></td>
+                        <td><button type="button" class="btn btn-info">Show</button></td>
+                        <td><button type="button" class="btn btn-info">Download</button></td>
+                    </tr>
+                    <tr>
+                        <td>Budget financial statements including cashflow statement - Quarterly</td>
+                        <td><select class="form-control">
+                                <option>Choose quarter:</option>
+                                <option>Q1</option>
+                                <option>Q2</option>
+                                <option>Q3</option>
+                                <option>Q4</option>
+                            </select></td>
+                        <td><button type="button" class="btn btn-info">Show</button></td>
+                        <td><button type="button" class="btn btn-info">Download</button></td>
+                    </tr>
+                    <tr>
+                        <td>Budget financial statements including cashflow statement - Semi Annual</td>
+                        <td><select class="form-control">
+                                <option>Choose semi annual:</option>
+                                <option>1st Half</option>
+                                <option>2nd Half</option>
+                            </select></td>
+                        <td><button type="button" class="btn btn-info">Show</button></td>
+                        <td><button type="button" class="btn btn-info">Download</button></td>
+                    </tr>
+                    <tr>
+                        <td>Pregress financial statements including cashflow statement - Monthly</td>
+                        <td><select class="form-control">
+                                <option>Choose month:</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select></td>
+                        <td><button type="button" class="btn btn-info">Show</button></td>
+                        <td><button type="button" class="btn btn-info">Download</button></td>
+                    </tr>
+                    <tr>
+                        <td>Progress financial statements including cashflow statement - Quarterly</td>
+                        <td><select class="form-control">
+                                <option>Choose quarter:</option>
+                                <option>Q1</option>
+                                <option>Q2</option>
+                                <option>Q3</option>
+                                <option>Q4</option>
+                            </select></td>
+                        <td><button type="button" class="btn btn-info">Show</button></td>
+                        <td><button type="button" class="btn btn-info">Download</button></td>
+                    </tr>
+                    <tr>
+                        <td>Progress financial statements including cashflow statement - Semi Annual</td>
+                        <td><select class="form-control">
+                                <option>Choose semi annual:</option>
+                                <option>1st Half</option>
+                                <option>2nd Half</option>
+                            </select></td>
+                        <td><button type="button" class="btn btn-info">Show</button></td>
+                        <td><button type="button" class="btn btn-info">Download</button></td>
+                    </tr>
+    
+                </tbody>
+            </table>
+        </div>
+    
+    
+    
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+  <!-- start footer -->
+  <footer>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-3">
+
+          <h3>LOGO</h3>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <h3>Recent News</h3>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <h3>Useful Links</h3>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <h3>Contact Form</h3>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="copyRight" class="text-center">
+      &copy; 2020 | Designed &amp; Developed by <a href="#">onFin Team</a>
+    </div>
+
+
+  </footer>
+  <!-- end footer -->
+
+
+  <!--	script-->
+  <!--	jquery-->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!--	popper-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <!--	bootstrap js-->
+  <script src="js/bootstrap.min.js"></script>
+  <!--	custom js-->
+  <script src="js/main.js"></script>
+  <!--	end script-->
+
+  <!-- <script>
+    $("#intersetAnnualRate").focusout(function() {
+    let decimalVal = document.getElementById('intersetAnnualRate').value / 100;
+    document.getElementById('intersetAnnualRate').value = decimalVal;
+
+});
+  </script> -->
+</body>
+
+</html>
+</body>
+
+</html>
